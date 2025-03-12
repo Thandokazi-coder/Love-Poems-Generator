@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css"/>
+
     <title>AI Poems Generator</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
   </header>
 
   <main>
-    <form>
+    <form class="poem-form-generator">
       <input type="text" placeholder="Enter the topic of the AI Poems"
     autofocus
     required
@@ -24,10 +26,8 @@
     </form>
   </main>
 
-  <div class="poem">
-    This poem will go here
-   <br />
-    This poem will go here
+  <div class="poem" id="poem">
+    
   </div>
 
   <footer>This Ai project has been <a href="https://github.com/Thandokazi-coder/" target="_blank"> coded by Thandokazi Payi </a>and 
