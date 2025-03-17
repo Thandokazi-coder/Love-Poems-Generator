@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css"/>
 
     <title>AI Poems Generator</title>
@@ -21,8 +22,13 @@
     required
     autocomplete="off"
     class="instructions"
+    id="user-instruction"
+
     />
-    <input type="submit" class="sumbit-button"/>
+
+    <input type="submit" class="submit-button" />
+
+  
     </form>
 
     <div class="poem" id="poem">
@@ -32,13 +38,11 @@
 
  
 
-  <footer>This Ai project has been <a href="https://github.com/Thandokazi-coder/" target="_blank"> coded by Thandokazi Payi </a>and 
-        <a href="https://github.com/Thandokazi-coder/Love-Poems-Generator" target="_blank">is open-sourced by GitHub
+  <footer>This Ai project has been 
+        <a href="https://github.com/Thandokazi-coder/" target="_blank"> coded by Thandokazi Payi </a>and 
+        <a href="https://github.com/Thandokazi-coder/Love-Poems-Generator" target="_blank">is open-sourced by GitHub </a> and 
+        <a href="https://poems-ai-generator.netlify.app/" target="_blank">is hosted by Netlify.</a>
 
-        </a> and 
-        <a href="https://poems-ai-generator.netlify.app/" target="_blank">is hosted by Netlify
-
-        </a>
     </footer>
   </div>
    <script src="src/index.js"></script>
