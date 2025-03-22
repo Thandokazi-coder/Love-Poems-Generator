@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css"/>
-
     <title>AI Poems Generator</title>
 </head>
 <body>
@@ -16,35 +15,32 @@
   </header>
 
   <main>
-    <form class="poem-form-generator">
+	 <div class="form-container">
+    <form id="poem-form-generator">
       <input type="text" placeholder="Enter the topic of the AI Poems"
     autofocus
     required
     autocomplete="off"
     class="instructions"
-    id="user-instruction"
+    id="user-instructions"
 
     />
 
     <input type="submit" class="submit-button" />
+ </form>
+ <div class="hint">i.e: Love, Mother or Flower</div>
+</div>
+    <div class="poem hidden" id="poem"></div>
+</main>
 
-  
-    </form>
-
-    <div class="poem" id="poem">
-    </div>
-
-  </main>
-
- 
-
-  <footer>This Ai project has been 
+ <footer>This Ai project has been 
         <a href="https://github.com/Thandokazi-coder/" target="_blank"> coded by Thandokazi Payi </a>and 
         <a href="https://github.com/Thandokazi-coder/Love-Poems-Generator" target="_blank">is open-sourced by GitHub </a> and 
         <a href="https://poems-ai-generator.netlify.app/" target="_blank">is hosted by Netlify.</a>
 
     </footer>
   </div>
+  
    <script src="src/index.js"></script>
 </body>
 </html>
